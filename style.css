@@ -1,0 +1,127 @@
+
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 100px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Logo styling */
+        .logo {
+            padding-top: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Navigation links */
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #475569;
+            font-size: 16px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #c45353;
+        }
+
+        /* Auth buttons */
+        .auth-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .signup-btn {
+            padding: 10px 20px;
+            color: #475569;
+            border: 1px solid #CBD5E1;
+            border-radius: 1234px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 1234px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        /* Mobile menu toggle (hidden by default) */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #555;
+        }
+
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 20px;
+                flex-wrap: wrap;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links,
+            .auth-buttons {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 15px;
+                padding-top: 15px;
+            }
+
+            .nav-links.active,
+            .auth-buttons.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 10px 0;
+            }
+
+            .auth-buttons {
+                padding-bottom: 15px;
+            }
+        }
