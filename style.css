@@ -100,7 +100,7 @@
             padding: 80px 40px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             gap: 40px;
             position: relative;
         }
@@ -110,6 +110,7 @@
             max-width: 600px;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 24px;
         }
 
@@ -160,23 +161,6 @@
             transform: translateY(-2px);
         }
 
-        .app-store {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .play-store {
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #dee2e6;
-        }
-
-        .button-text {
-            display: flex;
-            flex-direction: column;
-            font-size: 12px;
-        }
-
         .button-text span:first-child {
             font-size: 10px;
         }
@@ -188,8 +172,8 @@
 
         /* Icon styles */
         .app-icon {
-            width: 20px;
-            height: 20px;
+            width: 145px;
+            height: 44px;
         }
 
 
