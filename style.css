@@ -190,7 +190,7 @@
 .overlapping-images {
   position: relative;
   width: 100%;
-  margin: 0 -71px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -211,9 +211,6 @@
   right: 2%;
   transform: translateY(30%);
 }
-
-
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -246,5 +243,27 @@
 
   .auth-buttons {
     padding-bottom: 15px;
+  }
+
+  .image-overlap-container {
+    padding: 40px 20px;
+  }
+  
+  .overlapping-images {
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .bottom-image {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .top-image {
+    width: 60%;
+    max-width: 300px;
+    right: 5%;
+    bottom: -30px;
+    transform: translateY(0);
   }
 }
