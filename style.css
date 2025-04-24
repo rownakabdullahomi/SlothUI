@@ -138,7 +138,8 @@
         .description {
             font-size: 18px;
             color: #495057;
-            max-width: 500px;
+            font-weight: 400;
+            text-align: center;
         }
 
         /* App buttons */
@@ -179,6 +180,40 @@
         }
 
 
+        .image-overlap-container {
+            padding: 80px 0; /* Adds space above and below the overlapping images */
+            width: 100%;
+            margin: 0 0 0 0;
+
+            position: relative;
+        }
+        
+        .overlapping-images {
+            position: relative;
+            width: 100%;
+            margin: 0 -71px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bottom-image {
+            border-radius: 16px;
+            /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); */
+            z-index: 1;
+            position: relative;
+        }
+        
+        .top-image {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 12px;
+            /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); */
+            position: absolute;
+            z-index: 2;
+            bottom: 166px;
+            right: 2%;
+            transform: translateY(30%); /* Helps with the overlap positioning */
+        }
 
 
         /* Responsive styles */
